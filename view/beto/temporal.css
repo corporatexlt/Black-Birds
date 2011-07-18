@@ -1,0 +1,12 @@
+body
+{
+	background: url(imagenes/bgsao.jpg) #032E4E no-repeat;
+	width: 1216px;
+}
+
+#contenedor
+{
+	width: 1000px;
+	margin: 310px 10px 0 210px;
+	background: #0A3E63;
+}

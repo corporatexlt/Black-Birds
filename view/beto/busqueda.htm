@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Gu&iacute;a de las aves del valle de aburrá</title>
+
+        <meta name="Description" content="" />
+        <meta http-equiv="content-language" content="es-ES" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="aves del valle de aburrá" />
+        <meta name="robots" content="all" />
+        <meta name="googlebot" content="index, follow" />
+
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        <link rel="stylesheet" type="text/css" href="../../resources/js/jquery/css/custom-theme/jquery-ui-1.8.14.custom.css" />
+
+        <script type="text/javascript" src="../../resources/js/jquery/js/jquery-1.5.1.min.js">
+        </script>
+        <script type="text/javascript" src="../../resources/js/jquery/js/jquery-ui-1.8.14.custom.min.js">
+        </script>
+        <script type="text/javascript" src="../../resources/js/galleria/galleria-1.2.4.min.js">
+        </script>
+        <script src="http://www.google.com/jsapi?key=ABQIAAAAahcO7noe62FuOIQacCQQ7RTHkUDJMJAZieEeKAqNDtpKxMhoFxQsdtJdv3FJ1dT3WugUNJb7xD-jsQ" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            google.load("maps", "3", {'other_params':'sensor=true'});
+        </script>
+        <script type="text/javascript" src="../../resources/js/uimap/jquery.ui.map.min.js">
+        </script>
+
+        <script type="text/javascript" src="../../resources/js/filter.js">
+        </script>
+    </head>
+    <body>
+        <div id="contenedorGeneral" class="contenedor">
+            <div id="marco">
+                <div id="encabezado_2">
+                    <div id="links">
+                        <a href="#">Ayuda</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+                <div id="contenido">
+                    <div id='left_col'>
+                        <div class='cuadroBusqueda'>
+                            <h2>B&uacute;squeda por texto</h2>
+                            <form id="forma">
+                                <input type="text" id="busqueda"/>
+                                <img src="imagenes/lupa.jpg" id="botonBuscar" style="height: 20px" alt="Buscar" />
+                            </form>
+                            <hr />
+                            <h2>Filtros por Caracter&iacute;sticas</h2>
+                            <div id="cCuerpo">
+                                <div id="botonesFiltro" >
+                                    <a href="javascript:void(0)" id="botonBuscarFiltro" >
+                                        Buscar
+                                    </a>&nbsp;&nbsp;
+                                    <a href="javascript:void(0)" id="botonVerFiltro" >
+                                        Ver filtro
+                                    </a>&nbsp;&nbsp;
+                                    <a href="javascript:void(0)" id="botonVolver" >
+                                        Volver
+                                    </a>
+                                </div>
+                                <table id="filtrosIniciales" style="width: 100%; margin: auto;">
+                                    <tr>
+                                        <td>
+                                            <img src="../../resources/images/filtros/alas/alabutton.jpg" alt="Alas" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="formaAlas" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/patrones/patrones.jpg" alt="Patrones" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="patrones" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/habitat/habitat.jpg" alt="Habitat" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="habitats" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/silueta/siluetas.jpg" alt="Silueta" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="silueta" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../resources/images/filtros/picos/picos.jpg" alt="Pico" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="formaPico" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/colores/cabeza.jpg" alt="Colores cabeza" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="coloresCabeza" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/colores/pechobarriga.jpg" alt="Colores pecho" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="coloresPecho" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/colores/espaldaalasb.jpg" alt="Colores espalda" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="coloresEspalda" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../resources/images/filtros/tamanio/tamano.jpg" alt="Tama&ntilde;o" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="tamanio" />
+                                        </td>
+                                        <td>
+                                            <img src="../../resources/images/filtros/alimento/alimentacion.jpg" alt="Alimento" style="width: 75px; height: 71px; cursor: pointer;" class="filtroPrincipal" id="alimentoPrincipal" />
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div id="contenedorFiltroSecundario">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='right_col'>
+                        <div class='cuadroBusqueda'>
+                            <h2>Resultados</h2>
+                            <table class="tEncabezados">
+                                <tr>
+                                    <th class="th1">Nombres</th>
+                                    <th class="th2">Facilidad de observaci&oacute;n</th>
+                                </tr>
+                            </table>
+                            <div id="tCuerpo" class="contenedorListaFiltro" style="height: 360px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pie">
+                    <hr />
+                    <p>SAO 2011</p>
+                    <p>Powered by: Alberto G&oacute;mez</p>
+                </div>
+            </div>
+        </div>
+        <div id="modalFichaCompleta" title="Ficha t&eacute;cnica" style="display: none;">
+
+        </div>
+    </body>
+</html>

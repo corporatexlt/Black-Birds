@@ -1,0 +1,69 @@
+/*Contenedor general*/
+.main{
+    width: 770px;
+    background-image: url( "../images/negriTextura.png" ) ;
+}
+
+/*Encabezado*/
+.header{
+    width: 90%;
+    height: 55px;
+    line-height: 45px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*Contenido general*/
+.content{
+    float: left;
+    border: 2px solid #556b3a;
+    background-color: #ffffff;
+    padding: 5px 5px 5px 5px; 
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/*Contenedor de imagenes*/
+.pictureContainer{
+    height: 300px;
+    width: 370px; 
+    margin: 5px 5px 5px 15px;
+}
+
+/*Contenedor de datos*/
+.dataContainer{
+    height: 250px;
+    width: 330px;
+    margin: 5px 15px 5px 5px;
+}
+
+/*Contenedor de la lista*/
+.listContainer{
+    height: 310px;
+    width: 390px;
+    margin: 5px 5px 5px 15px;
+}
+
+/*Contenedor del filto*/
+.filterContainer{
+    height: 150px;
+    width: 300px; 
+    margin: 5px 15px 5px 5px;
+}
+
+.titulo{
+    border-bottom: 1px solid black;
+    color: #333333;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/*Pie de pagina*/
+.footer{
+    width: 380px;
+    padding: 15px;
+    clear: both;
+}
